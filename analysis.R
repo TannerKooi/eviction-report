@@ -1,4 +1,4 @@
-# Analysis script: compute values and create graphics of interest
+# Analysis script: compute values and create graphics of interest.
 library("dplyr")
 library("ggplot2")
 library("lubridate")
@@ -71,5 +71,4 @@ by_month <- evictions %>%
     geom_point(mapping = aes(x = long, y = lat), color = "blue", alpha = 5) +
     labs(title = "Evictions in San Francisco, 2017") +
     theme(plot.margin = margin(.2, .2, 0, 0, "cm"))
-  
   
